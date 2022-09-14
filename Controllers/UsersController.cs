@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Nancy.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -56,7 +56,8 @@ namespace UserInfo.Controllers
             }
         }
 
-        [HttpPut(Name = "UpdateUuser/{id}")]
+        [Route("UpdateUuser/{id}")]
+        [HttpPut]
         public void UpdateUuser(int id, User user)
         {
             string json = System.IO.File.ReadAllText("userdetails.json");
@@ -89,7 +90,8 @@ namespace UserInfo.Controllers
             }
         }
 
-        [HttpDelete(Name = "DeleteUser/{id}")]
+        [Route("DeleteUser/{id}")]
+        [HttpDelete]
         public void DeleteUser(int id)
         {
             var json = System.IO.File.ReadAllText("userdetails.json");
