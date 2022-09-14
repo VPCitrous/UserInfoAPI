@@ -66,7 +66,7 @@ namespace UserInfo
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mias Environment Tracker API");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "User API");
                 c.RoutePrefix = "";
             });
         }
