@@ -31,8 +31,8 @@ namespace UserInfo
                 options.SwaggerDoc("v1",
                 new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Title = "Mias Environment Tracker API",
-                    Description = "Mias Environment Tracker API",
+                    Title = "UserInfo API",
+                    Description = "UserInfo API",
                     Version = "v1"
                 });
             });
